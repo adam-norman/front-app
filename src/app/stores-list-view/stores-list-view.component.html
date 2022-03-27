@@ -1,0 +1,41 @@
+<div class="scrollBbar" style="position: absolute;right: 0;">
+<div *ngFor="let store of inputStoresList" class="item_direction" >
+    <div id="DIV_1">
+        <a  [routerLink]="['/details']"
+        [queryParams]="{id: store.id}" id="A_2">
+        <div id="DIV_3">
+            <div id="DIV_4">
+                <div id="DIV_5">
+                    <div id="DIV_6">
+                        <div id="DIV_7">
+                            <div id="DIV_8">
+                                <img src="{{store.logo}}" width="44" height="44" alt="Al Forsan" id="IMG_9" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="DIV_10">
+                <div id="DIV_11">
+                    <h2 id="H2_12">
+                        {{store.name}}
+                    </h2>
+                </div>
+                <div id="DIV_13">
+                    <span id="SPAN_14"> {{store.cuisines}}</span>
+                </div>
+                <div id="DIV_24">
+                    <div id="DIV_25">
+                        <span>Open: {{store.startWorkAt}}</span>
+                        <span id="SPAN_26">  |  Close: {{store.endWorkAt}}</span>
+                    </div>
+                    <div>
+                        expected delivery time: 15-40 Min.
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </div>
+</div>
+</div>

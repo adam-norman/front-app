@@ -1,0 +1,110 @@
+<div class="container">
+
+	<div id="DIV_6">
+		<div id="DIV_7">
+			<span id="SPAN_14">{{storeData?.name}}</span>
+		</div>
+	</div>
+	<div id="DIV_15">
+		<div id="DIV_16">
+			<div id="DIV_17">
+				<div id="DIV_18">
+
+					<div id="DIV_20">
+						<span id="SPAN_21"></span><img src="{{storeData?.logo}}" alt="Al Forsan" id="IMG_22" />
+					</div>
+					<div id="DIV_23">
+						<div id="DIV_24">
+							<div id="DIV_25">
+								<h1>
+									{{storeData?.name}}<br id="BR_28" />
+								</h1>
+							</div>
+
+						</div>
+						<div id="DIV_32">
+							<div id="DIV_33">
+								<p id="P_34">
+									{{storeData?.cuisines}}
+								</p>
+							</div>
+						</div>
+						<div id="DIV_40">
+							<div id="DIV_41">
+								<p id="P_42">
+									<span id="SPAN_43">Min. order: EGP 15.00</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="DIV_54">
+				Delivered by us, with live tracking
+			</div>
+
+		</div>
+	</div>
+	<div id="DIV_60">
+		<div id="DIV_65">
+			<div id="DIV_66">
+				<div id="DIV_67">
+					<div id="DIV_68">
+						<div id="DIV_69">
+							<h4 id="H4_70">
+								Items By Piece
+							</h4>
+						</div>
+						<div id="DIV_71">
+							<svg id="svg_72">
+								<path id="path_73">
+								</path>
+							</svg>
+						</div>
+					</div>
+					<div id="DIV_74">
+						<div id="DIV_75">
+							<div id="DIV_76" *ngFor="let item of storeData?.storeDetails">
+								<div id="DIV_77">
+									<div id="DIV_78">
+										<div id="DIV_79">
+											<div id="DIV_80">
+												<img src="{{item?.photoUrl}}" height="58" alt="Bun Bread" id="IMG_81" />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="DIV_82">
+									<div id="DIV_83">
+										{{item?.name}}
+									</div>
+									<div id="DIV_84">
+									</div>
+								</div>
+								<div id="DIV_85">
+									<div id="DIV_86">
+										<div id="DIV_87">
+											<span id="SPAN_89"> {{item?.price}}</span>
+											<span id="SPAN_88"> EGP</span>
+										</div>
+									</div>
+									<div id="DIV_90">
+										<div id="DIV_91">
+
+											Size: {{item?.size}}
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>
